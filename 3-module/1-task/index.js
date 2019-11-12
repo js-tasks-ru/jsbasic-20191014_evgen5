@@ -9,7 +9,7 @@ function showSalary(data, age) {
   let result = '';
 
   for (const key of people) {
-    result += (key.name + ',' + ' ' + key.balance + '\n');
+    result += `${key.name}, ${key.balance}\n`;
   }
 
   return result.slice(0, -1);
