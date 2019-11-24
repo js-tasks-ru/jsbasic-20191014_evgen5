@@ -12,5 +12,5 @@ function getMinMax(str) {
     .filter(item => !isNaN(item))
     .sort((a, b) => a - b);
 
-  return { min: result[0], max: result.length - 1 };
+  return { min: result[0], max: result[result.length - 1] };
 }
